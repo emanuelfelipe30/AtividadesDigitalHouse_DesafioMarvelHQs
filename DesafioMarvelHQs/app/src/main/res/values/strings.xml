@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">DesafioMarvelHQs</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="splash_screen_background">splash screen background</string>
+    <string name="marvel_logo">marvel logo</string>
 </resources>
