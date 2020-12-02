@@ -18,5 +18,14 @@
         android:id="@+id/loginFragment"
         android:name="br.com.emanuel.desafiomarvelhqs.login.LoginFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_comicsFragment"
+            app:destination="@id/comicsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/comicsFragment"
+        android:name="br.com.emanuel.desafiomarvelhqs.comics.view.ComicsFragment"
+        android:label="fragment_comics"
+        tools:layout="@layout/fragment_comics" />
 </navigation>

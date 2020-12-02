@@ -6,4 +6,6 @@
     <dimen name="dm_18sp">18sp</dimen>
     <dimen name="dm_20dp">20dp</dimen>
     <dimen name="dm_300dp">300dp</dimen>
+    <dimen name="dm_35dp">35dp</dimen>
+    <dimen name="dm_4dp">4dp</dimen>
 </resources>

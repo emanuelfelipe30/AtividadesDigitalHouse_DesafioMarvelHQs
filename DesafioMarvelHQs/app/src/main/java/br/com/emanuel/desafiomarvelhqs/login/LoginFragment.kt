@@ -5,10 +5,15 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import br.com.emanuel.desafiomarvelhqs.R
 
 class LoginFragment : Fragment() {
+
+    private lateinit var navController: NavController
+    private lateinit var btnLogin: Button
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -20,12 +25,18 @@ class LoginFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        navController = Navigation.findNavController(view)
         removeSplashScreenOfBackStack()
+
+        btnLogin = view.findViewById(R.id.btnLogin)
+        btnLogin.setOnClickListener {
+            navController.navigate(R.id.comicsFragment)
+        }
+
     }
 
     private fun removeSplashScreenOfBackStack() {
-        Navigation.findNavController(requireView()).popBackStack(
-            R.id.splashFragment, true)
+        navController.popBackStack(R.id.splashFragment, true)
     }
 
 }
