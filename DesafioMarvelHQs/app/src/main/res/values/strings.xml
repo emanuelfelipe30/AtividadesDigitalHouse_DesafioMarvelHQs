@@ -17,4 +17,8 @@
     <string name="price">Price:</string>
     <string name="pages">Pages:</string>
     <string name="price_value">$ %s</string>
+    <string name="register">Register</string>
+    <string name="create_a_new_account">Create a new account</string>
+    <string name="save">Save</string>
+    <string name="name">Name</string>
 </resources>

@@ -14,6 +14,7 @@ class LoginFragment : Fragment() {
 
     private lateinit var navController: NavController
     private lateinit var btnLogin: Button
+    private lateinit var btnNavigateToCreateAccountScreen: Button
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -26,6 +27,11 @@ class LoginFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         navController = Navigation.findNavController(view)
+
+        btnNavigateToCreateAccountScreen = view.findViewById(R.id.btnNavigateToCreateAccountScreen)
+        btnNavigateToCreateAccountScreen.setOnClickListener {
+            navController.navigate(R.id.registerFragment)
+        }
 
         btnLogin = view.findViewById(R.id.btnLogin)
         btnLogin.setOnClickListener {
