@@ -27,5 +27,18 @@
         android:id="@+id/comicsFragment"
         android:name="br.com.emanuel.desafiomarvelhqs.comics.view.ComicsFragment"
         android:label="fragment_comics"
-        tools:layout="@layout/fragment_comics" />
+        tools:layout="@layout/fragment_comics" >
+        <action
+            android:id="@+id/action_comicsFragment_to_comicDetailFragment"
+            app:destination="@id/comicDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/comicDetailFragment"
+        android:name="br.com.emanuel.desafiomarvelhqs.comicdetail.view.ComicDetailFragment"
+        android:label="fragment_comic_detail"
+        tools:layout="@layout/fragment_comic_detail" >
+        <argument
+            android:name="comicId"
+            app:argType="integer" />
+    </fragment>
 </navigation>

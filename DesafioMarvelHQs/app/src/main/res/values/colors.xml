@@ -7,4 +7,5 @@
     <color name="button_outlined_text_color">#343F4B</color>
     <color name="checkbox_text_color">#47525E</color>
     <color name="background_comics_screen">#00162C</color>
+    <color name="comic_details_text_color">#B3B3B3</color>
 </resources>

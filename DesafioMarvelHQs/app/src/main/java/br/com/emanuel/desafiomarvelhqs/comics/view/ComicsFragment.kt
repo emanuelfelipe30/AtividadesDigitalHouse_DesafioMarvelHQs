@@ -8,6 +8,8 @@ import android.view.ViewGroup
 import android.widget.Toolbar
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.NavController
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import br.com.emanuel.desafiomarvelhqs.R
@@ -53,7 +55,8 @@ class ComicsFragment : Fragment() {
         val manager = GridLayoutManager(myView.context, 3)
 
         val boardsAdapter = ComicsAdapter(comics) {
-
+            val action = ComicsFragmentDirections.actionComicsFragmentToComicDetailFragment(it.id)
+            findNavController().navigate(action)
         }
 
         recyclerView.apply {

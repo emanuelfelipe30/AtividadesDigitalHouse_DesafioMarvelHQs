@@ -32,6 +32,7 @@ class SplashFragment : Fragment() {
 
     private fun closeSplashScreen() {
         Handler(Looper.getMainLooper()).postDelayed({
+            navController.popBackStack(R.id.splashFragment, true)
             navController.navigate(R.id.loginFragment)
         }, SPLASH_DURATION)
     }

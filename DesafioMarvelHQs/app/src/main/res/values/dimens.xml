@@ -8,4 +8,7 @@
     <dimen name="dm_300dp">300dp</dimen>
     <dimen name="dm_35dp">35dp</dimen>
     <dimen name="dm_4dp">4dp</dimen>
+    <dimen name="dm_120dp">120dp</dimen>
+    <dimen name="dm_30dp">30dp</dimen>
+    <dimen name="dm_22sp">22sp</dimen>
 </resources>

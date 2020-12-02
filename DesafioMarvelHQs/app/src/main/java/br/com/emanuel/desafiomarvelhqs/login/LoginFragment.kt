@@ -26,17 +26,13 @@ class LoginFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         navController = Navigation.findNavController(view)
-        removeSplashScreenOfBackStack()
 
         btnLogin = view.findViewById(R.id.btnLogin)
         btnLogin.setOnClickListener {
+            navController.popBackStack(R.id.loginFragment, true)
             navController.navigate(R.id.comicsFragment)
         }
 
-    }
-
-    private fun removeSplashScreenOfBackStack() {
-        navController.popBackStack(R.id.splashFragment, true)
     }
 
 }
